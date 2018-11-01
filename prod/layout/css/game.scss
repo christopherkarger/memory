@@ -1,0 +1,98 @@
+//#game {
+	// display: -ms-flexbox;
+	// display: -webkit-flex;
+	// display: flex;
+	// -webkit-flex-direction: row;
+	// -ms-flex-direction: row;
+	// flex-direction: row;
+	// -webkit-flex-wrap: wrap;
+	// -ms-flex-wrap: wrap;
+	// flex-wrap: wrap;
+	// -webkit-justify-content: flex-start;
+	// -ms-flex-pack: start;
+	// justify-content: flex-start;
+	// -webkit-align-content: flex-start;
+	// -ms-flex-line-pack: start;
+	// align-content: flex-start;
+	// -webkit-align-items: flex-start;
+	// -ms-flex-align: start;
+	// align-items: flex-start;
+//}
+
+.memory-card {
+	float: left;
+	width: $cardWidth4;
+	height: 0;
+	padding-top: $cardWidth4;
+	perspective: 1000px;
+	transition: 0.6s;
+	position: relative;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	cursor: pointer;
+
+	&.show,
+	&.turned {
+
+		.back {
+			-webkit-transform: rotateY(0deg);
+			transform: rotateY(0deg);
+		}
+
+		.front {
+			-webkit-transform: rotateY(180deg);
+			transform: rotateY(180deg);
+		}
+
+	}
+
+	.front, .back {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		-webkit-transition: 0.6s;
+		transition: 0.6s;
+		-webkit-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+		transform: rotateY(0deg);
+		-webkit-transform: rotateY(0deg);	
+		background-position: 0 0;
+		background-size: 100% auto; 
+	}
+
+	.front {
+		z-index: 2;
+		transform: rotateY(0deg);
+		background: url(../img/cards/back.jpg) 0 0 no-repeat;
+		background-size: 100% auto; 
+	}
+
+	.back { transform: rotateY(-180deg); }
+
+}
+
+.card1  { .back { background-image: url(../img/cards/card1.jpg); } }
+.card2  { .back { background-image: url(../img/cards/card2.jpg); } }
+.card3  { .back { background-image: url(../img/cards/card3.jpg); } }
+.card4  { .back { background-image: url(../img/cards/card4.jpg); } }
+.card5  { .back { background-image: url(../img/cards/card5.jpg); } }
+.card6  { .back { background-image: url(../img/cards/card6.jpg); } }
+.card7  { .back { background-image: url(../img/cards/card7.jpg); } }
+.card8  { .back { background-image: url(../img/cards/card8.jpg); } }
+.card9  { .back { background-image: url(../img/cards/card9.jpg); } }
+.card10 { .back { background-image: url(../img/cards/card10.jpg); } }
+.card11 { .back { background-image: url(../img/cards/card11.jpg); } }
+.card12 { .back { background-image: url(../img/cards/card12.jpg); } }
+.card13 { .back { background-image: url(../img/cards/card13.jpg); } }
+.card14 { .back { background-image: url(../img/cards/card14.jpg); } }
+.card15 { .back { background-image: url(../img/cards/card15.jpg); } }
+.card16 { .back { background-image: url(../img/cards/card16.jpg); } }
+.card17 { .back { background-image: url(../img/cards/card17.jpg); } }
+.card18 { .back { background-image: url(../img/cards/card18.jpg); } }
+.card19 { .back { background-image: url(../img/cards/card19.jpg); } }
+.card20 { .back { background-image: url(../img/cards/card20.jpg); } }
+

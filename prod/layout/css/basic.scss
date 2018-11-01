@@ -1,0 +1,74 @@
+@font-face {
+	font-family: 'rum';
+	src: url('../files/rumraisin-regular.woff2') format('woff2'),
+	url('../files/rumraisin-regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'nosifer';
+	src: url('../files/nosifer-regular.woff2') format('woff2'),
+	url('../files/nosifer-regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'awesome';
+	src: url('../files/fontawesome.woff2') format('woff2'),
+	url('../files/fontawesome.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html {
+	-webkit-appearance: none;
+}
+
+body {
+	background: url(../img/bg.jpg) 100% 50% no-repeat;
+	background-size: cover;
+	font-family: 'rum';
+	font-size: 16px;
+	min-height: 100vh;
+	min-width: 320px;
+	color: $grey;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+	margin-top: 0;
+	font-weight: normal;
+}
+
+input {
+	-webkit-appearance: none;
+	display: block;
+	margin-bottom: 1em;
+	border-radius: 0;
+}
+.clearfix:after,
+.clearfix:before {
+	content:" ";
+	display:table;
+}
+
+.clearfix:after {
+	clear:both;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+a {
+	text-decoration: underline;
+	color: $red;
+	font-size: 16px;
+}

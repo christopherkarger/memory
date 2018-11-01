@@ -1,0 +1,48 @@
+@media screen and(min-height: 560px) {
+  .site-footer {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+  }
+}
+
+@media screen and(min-width: 768px) {
+  .top-bar {
+    margin-bottom: 20px;
+  }
+
+  .outer-wrapper {
+    padding-bottom: 30px;
+  }
+
+  .site-title { 
+    padding-top: 70px;
+    margin-bottom: 25px;
+    font-size: 129px;
+    letter-spacing: -10px;
+  }
+
+  .site-footer {
+    text-align: right;
+    width: auto;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    left: auto;
+  }
+
+  .memory-card {
+    width: $cardWidth8;
+    padding-top: $cardWidth8;
+  }
+
+  .ranking-page {
+    .first,
+    .second,
+    .third,
+    .fourth {
+      font-size: 16px;
+    }
+  }
+
+}
